@@ -24,7 +24,7 @@
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-helmet": "5.2.1",
-    "@mdx-js/mdx": "1.0.15",
+    "@mdx-js/mdx": "1.1.0",
     "@mdx-js/react": "1.0.15",
     "@emotion/core": "10.0.10",
     "@emotion/styled": "10.0.10"
