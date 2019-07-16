@@ -5,6 +5,6 @@ import Index from './index';
 describe('index', () => {
   it('renders h1', () => {
     const tree = renderer.create(<Index />).toJSON();
-    expect(tree.type).toBe('h1');
+    expect(tree).toMatchSnapshot();
   });
 });
