@@ -38,7 +38,7 @@
     "prettier": "1.18.2",
     "react-test-renderer": "16.8.6"
   },
-  "keywords": [ 
+  "keywords": [
     "gatsby"
   ],
   "license": "MIT",
@@ -48,7 +48,7 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "jest", 
+    "test": "jest",
     "test:watch": "jest --watch"
   },
   "repository": {

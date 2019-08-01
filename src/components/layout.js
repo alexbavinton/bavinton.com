@@ -1,6 +1,8 @@
 import React from 'react';
 import { Global, css } from '@emotion/core';
 import { lightGrey, backgroundDark, lightAccent } from './colors';
+import Header from './header';
+
 const Layout = ({ children }) => (
   <>
     <Global
@@ -43,7 +45,7 @@ const Layout = ({ children }) => (
         }
       `}
     />
-    <header></header>
+    <Header />
     <main>{children}</main>
   </>
 );
