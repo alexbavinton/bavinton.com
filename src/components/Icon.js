@@ -7,6 +7,7 @@ const Icon = ({ Component, href }) => (
     <a href={href}>
       <Component
         css={css`
+          display: inline-block;
           height: 100%;
           fill: ${lightGrey};
           :hover {
