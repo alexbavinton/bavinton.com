@@ -1,12 +1,6 @@
 import React from 'react';
 import { css } from '@emotion/core';
-import {
-  lightGrey,
-  backgroundLight,
-  lightAccent,
-  darkAccent,
-  backgroundDark,
-} from './colors';
+import { lightGrey } from './colors';
 import links from './links';
 import Icon from './Icon';
 import Github from '../assets/github.svg';
@@ -46,7 +40,6 @@ const listStyle = css`
 `;
 
 const listItemStyle = css`
-  /* margin-right: 0.25rem; */
   flex: auto;
 `;
 
