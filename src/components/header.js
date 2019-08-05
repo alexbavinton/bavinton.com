@@ -30,7 +30,7 @@ const listStyle = css`
 `;
 
 const listItemStyle = css`
-  margin-right: 2.1rem;
+  margin-right: 1rem;
 `;
 
 const Header = () => (
