@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 import {
   lightGrey,
@@ -14,19 +13,40 @@ import Github from '../assets/github.svg';
 import Linkedin from '../assets/linkedin.svg';
 import Insta from '../assets/instagram.svg';
 
-const Head = styled.header`
-  height: 2.5rem;
+const headerStyle = css`
+  height: 2rem;
   color: ${lightGrey};
-  padding: 0.5rem 5vw;
   line-height: 1;
+  padding-right: 2rem;
+  margin-top: 0.5rem;
+`;
+
+const listStyle = css`
+  display: flex;
+  height: inherit;
+  list-style-type: none;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+`;
+
+const listItemStyle = css`
+  margin-right: 2.1rem;
 `;
 
 const Header = () => (
-  <Head>
-    <Icon Component={Github} href={links.github} />
-    <Icon Component={Linkedin} href={links.linkedin} />
-    <Icon Component={Insta} href={links.instagram} />
-  </Head>
+  <header css={headerStyle}>
+    <ul css={listStyle}>
+      <li css={listItemStyle}>
+        <Icon Component={Github} href={links.github} />
+      </li>
+      <li css={listItemStyle}>
+        <Icon Component={Linkedin} href={links.linkedin} />
+      </li>
+      <li css={listItemStyle}>
+        <Icon Component={Insta} href={links.instagram} />
+      </li>
+    </ul>
+  </header>
 );
 
 export default Header;

@@ -9,7 +9,6 @@ const Icon = ({ Component, href }) => (
         css={css`
           height: 100%;
           fill: ${lightGrey};
-          margin: 0.5rem;
           :hover {
             fill: ${darkAccent};
           }
