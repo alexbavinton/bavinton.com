@@ -14,11 +14,15 @@ import Linkedin from '../assets/linkedin.svg';
 import Insta from '../assets/instagram.svg';
 
 const headerStyle = css`
-  height: 2rem;
+  height: 1.5rem;
   color: ${lightGrey};
   line-height: 1;
   padding-right: 2rem;
   margin-top: 0.5rem;
+  padding-left: 80vw;
+  @media only screen and (min-width: 1200px) {
+    height: 2rem;
+  }
 `;
 
 const listStyle = css`
@@ -26,11 +30,11 @@ const listStyle = css`
   height: inherit;
   list-style-type: none;
   flex-wrap: nowrap;
-  justify-content: flex-end;
+  justify-content: space-evenly;
 `;
 
 const listItemStyle = css`
-  margin-right: 1rem;
+  /* margin-right: 0.25rem; */
 `;
 
 const Header = () => (

@@ -8,6 +8,7 @@ const Icon = ({ Component, href }) => (
       <Component
         css={css`
           display: inline-block;
+          margin-right: 0.25rem;
           height: 100%;
           fill: ${lightGrey};
           :hover {
