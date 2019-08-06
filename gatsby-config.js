@@ -26,6 +26,10 @@ module.exports = {
         fonts: [
           {
             family: `Jura`,
+            variants: [`400`, `700`],
+          },
+          {
+            family: `Roboto`,
           },
           {
             family: `Open Sans`,

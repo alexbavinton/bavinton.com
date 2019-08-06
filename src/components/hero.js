@@ -11,33 +11,34 @@ import {
 const heroStyles = css`
   height: 90vh;
   background-image: url('images/backgroundHero.png');
-  background-size: stretch;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: top 20% center;
   position: relative;
   .copy {
-    font-size: 150%;
+    font-size: 175%;
     position: absolute;
-    top: 0;
-    height: 100%;
-    right: 1;
-    background-image: linear-gradient(
+    bottom: 4rem;
+    /* height: 100%; */
+    left: 4rem;
+    /* background-image: linear-gradient(
       to bottom,
       ${backgroundLight}dd 2rem,
       ${backgroundLight}00
-    );
-    /* background-color: ${backgroundLight}dd; */
+    ); */
+    background-color: ${backgroundLight}dd;
+    border-radius: 10px;
     text-shadow: 2px 2px 1px ${backgroundDark};
-    h3 {
-      color: ${lightGrey};
-    }
+    font-weight: 400;
   }
 `;
 
-const Hero = () => (
+const Hero = ({ children }) => (
   <div css={heroStyles}>
     <div className="copy">
       <h1>Alex Bavinton</h1>
       <h3>Software Engineer</h3>
+      {children}
     </div>
   </div>
 );

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Global, css } from '@emotion/core';
-import { lightGrey, backgroundDark, lightAccent } from './colors';
+import { lightGrey, backgroundDark, lightAccent, darkAccent } from './colors';
 import Header from './header';
 
 const Layout = ({ children }) => (
@@ -16,7 +16,7 @@ const Layout = ({ children }) => (
         body {
           margin: 0;
           color: ${lightGrey};
-          font-family: 'Jura';
+          font-family: 'Roboto';
           font-size: 18px;
           line-height: 1.4;
           background-color: ${backgroundDark};
@@ -28,12 +28,18 @@ const Layout = ({ children }) => (
 
         h1,
         h2,
-        h3,
-        h4,
-        h5,
-        h6 {
+        h3 {
           color: ${lightAccent};
           line-height: 1.1;
+          font-family: 'Jura';
+        }
+
+        h2 {
+          color: ${darkAccent};
+        }
+
+        h3 {
+          color: ${lightGrey};
         }
 
         li {
