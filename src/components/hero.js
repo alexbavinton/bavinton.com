@@ -1,12 +1,6 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
 import { css } from '@emotion/core';
-import {
-  backgroundLight,
-  darkAccent,
-  backgroundDark,
-  lightGrey,
-} from '../components/colors';
+import { backgroundLight, backgroundDark } from '../components/colors';
 import Icon from '../components/Icon';
 import Github from '../assets/github.svg';
 import Linkedin from '../assets/linkedin.svg';
