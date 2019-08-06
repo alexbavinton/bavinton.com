@@ -16,7 +16,7 @@ const Layout = ({ children }) => (
         body {
           margin: 0;
           color: ${lightGrey};
-          font-family: 'Roboto', sans-serif;
+          font-family: 'Jura';
           font-size: 18px;
           line-height: 1.4;
           background-color: ${backgroundDark};

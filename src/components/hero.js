@@ -13,12 +13,19 @@ const heroStyles = css`
   background-image: url('images/backgroundHero.png');
   background-size: stretch;
   background-position: top 20% center;
+  position: relative;
   .copy {
+    font-size: 150%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    right: 1;
     background-image: linear-gradient(
-      to top,
+      to bottom,
       ${backgroundLight}dd 2rem,
       ${backgroundLight}00
     );
+    /* background-color: ${backgroundLight}dd; */
     text-shadow: 2px 2px 1px ${backgroundDark};
     h3 {
       color: ${lightGrey};
