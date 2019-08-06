@@ -1,4 +1,8 @@
 module.exports = {
+  siteMetadata: {
+    title: 'Alex Bavinton - Software Engineer',
+    description: 'Personal website of Alex Bavinton - software engineer at YLD',
+  },
   plugins: [
     'gatsby-plugin-emotion',
     'gatsby-plugin-react-helmet',
