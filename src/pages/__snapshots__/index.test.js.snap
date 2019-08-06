@@ -1,7 +1,227 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`index renders h1 1`] = `
-<h1>
-  Test
-</h1>
+Array [
+  <header
+    css={
+      Object {
+        "map": undefined,
+        "name": "8jyx37",
+        "next": undefined,
+        "styles": "
+  height: 1rem;
+  color: #C5C6C7;
+  line-height: 1;
+  padding-right: 2rem;
+  margin-top: 0.5rem;
+  padding-left: 80vw;
+
+  @media only screen and (min-width: 768px) {
+    height: 1.5rem;
+  }
+  @media only screen and (min-width: 992px) {
+    height: 1.75rem;
+    padding-left: 85vw;
+  }
+  @media only screen and (min-width: 1200px) {
+    height: 2rem;
+    padding-left: 85vw;
+  }
+",
+      }
+    }
+  >
+    <ul
+      css={
+        Object {
+          "map": undefined,
+          "name": "1ad2a0w",
+          "next": undefined,
+          "styles": "
+  display: flex;
+  height: inherit;
+  list-style-type: none;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+",
+        }
+      }
+    >
+      <li
+        css={
+          Object {
+            "map": undefined,
+            "name": "1ypjkz1",
+            "next": undefined,
+            "styles": "
+  flex: auto;
+",
+          }
+        }
+      >
+        <a
+          href="https://github.com/alexbavinton"
+        >
+          <div
+            className="mock"
+          />
+        </a>
+      </li>
+      <li
+        css={
+          Object {
+            "map": undefined,
+            "name": "1ypjkz1",
+            "next": undefined,
+            "styles": "
+  flex: auto;
+",
+          }
+        }
+      >
+        <a
+          href="https://www.linkedin.com/in/alex-bavinton"
+        >
+          <div
+            className="mock"
+          />
+        </a>
+      </li>
+      <li
+        css={
+          Object {
+            "map": undefined,
+            "name": "1ypjkz1",
+            "next": undefined,
+            "styles": "
+  flex: auto;
+",
+          }
+        }
+      >
+        <a
+          href="https://www.instagram.com/alexbavinton/"
+        >
+          <div
+            className="mock"
+          />
+        </a>
+      </li>
+    </ul>
+  </header>,
+  <main>
+    <div
+      css={
+        Object {
+          "map": undefined,
+          "name": "rcl816",
+          "next": undefined,
+          "styles": "
+  height: 90vh;
+  background-image: url('images/backgroundHero.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top 20% center;
+  position: relative;
+  .copy {
+    font-size: 175%;
+    position: absolute;
+    bottom: 4rem;
+    left: 4rem;
+    background-color: #1F283380;
+    border-radius: 10px;
+    text-shadow: 2px 2px 1px #0B0B0B;
+    font-weight: 400;
+    padding: 0.25rem;
+    @media only screen and (max-width: 768px) {
+      font-size: 125%;
+      top: 0;
+      left: 1.5rem;
+      height: fit-content;
+    }
+  }
+",
+        }
+      }
+    >
+      <div
+        className="copy"
+      >
+        <h1>
+          Alex Bavinton
+        </h1>
+        <h3>
+          Software Engineer
+        </h3>
+      </div>
+      <ul
+        css={
+          Object {
+            "map": undefined,
+            "name": "yyr0pf",
+            "next": undefined,
+            "styles": "
+  display: none;
+  @media only screen and (max-width: 768px) {
+    padding: 0.25rem;
+    display: block;
+    list-style-type: none;
+    background-color: #1F283380;
+    border-radius: 10px;
+    position: absolute;
+    top: 40vh;
+    left: 1.5rem;
+    li {
+      display: inline-block;
+    }
+  }
+",
+          }
+        }
+      >
+        <li>
+          <a
+            href="https://github.com/alexbavinton"
+          >
+            <div
+              className="mock"
+            />
+          </a>
+        </li>
+        <li
+          css={
+            Object {
+              "map": undefined,
+              "name": "1wcm6ie",
+              "next": undefined,
+              "styles": "
+          margin: 0 2rem 0 2rem;
+        ",
+            }
+          }
+        >
+          <a
+            href="https://www.linkedin.com/in/alex-bavinton"
+          >
+            <div
+              className="mock"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/alexbavinton/"
+          >
+            <div
+              className="mock"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </main>,
+]
 `;
