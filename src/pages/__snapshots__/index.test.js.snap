@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`index renders h1 1`] = `
+exports[`index renders landing page 1`] = `
 Array [
   <header
     css={
@@ -114,6 +114,7 @@ Array [
   </header>,
   <main>
     <div
+      className=" gatsby-background-image-stplsqh_depr gatsby-image-wrapper"
       css={
         Object {
           "map": undefined,
@@ -146,7 +147,67 @@ Array [
 ",
         }
       }
+      style={
+        Object {
+          "backgroundPosition": "center",
+          "backgroundRepeat": "no-repeat",
+          "backgroundSize": "cover",
+          "opacity": 0.99,
+          "overflow": "hidden",
+          "position": "relative",
+        }
+      }
+      tag="section"
+      title=""
     >
+      <style
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "
+          .gatsby-background-image-stplsqh_depr:before,
+          .gatsby-background-image-stplsqh_depr:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            
+            transition: opacity 0.5s ease 0.25s;
+            background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+          }
+          .gatsby-background-image-stplsqh_depr:before {
+            z-index: -100;
+            
+            
+            opacity: 0; 
+          }
+          .gatsby-background-image-stplsqh_depr:after {
+            z-index: -101;
+            
+            
+          }
+        ",
+          }
+        }
+      />
+      <noscript>
+        <style
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "
+          .gatsby-background-image-stplsqh_depr:before {
+            opacity: 1;
+            background-image: url('./foo');
+          }",
+            }
+          }
+        />
+      </noscript>
       <div
         className="copy"
       >
@@ -195,11 +256,11 @@ Array [
           css={
             Object {
               "map": undefined,
-              "name": "1wcm6ie",
+              "name": "a1n7m6",
               "next": undefined,
               "styles": "
-          margin: 0 2rem 0 2rem;
-        ",
+            margin: 0 2rem 0 2rem;
+          ",
             }
           }
         >

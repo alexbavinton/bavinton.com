@@ -1,11 +1,13 @@
 import React from 'react';
 import { css } from '@emotion/core';
+import BackgroundImage from 'gatsby-background-image';
 import { backgroundLight, backgroundDark } from '../components/colors';
 import Icon from '../components/Icon';
 import Github from '../assets/github.svg';
 import Linkedin from '../assets/linkedin.svg';
 import Insta from '../assets/instagram.svg';
 import links from './links';
+import useBackgroundImage from '../hooks/useBackroundImage';
 
 const heroStyles = css`
   height: 90vh;
@@ -50,30 +52,34 @@ const mobileLinksStyle = css`
   }
 `;
 
-const Hero = ({ children }) => (
-  <div css={heroStyles}>
-    <div className="copy">
-      <h1>Alex Bavinton</h1>
-      <h3>Software Engineer</h3>
-    </div>
-    {/* Placeholder mobile links for MVP */}
-    <ul css={mobileLinksStyle}>
-      <li>
-        <Icon Component={Github} href={links.github} height="4.5rem" />
-      </li>
-      <li
-        css={css`
-          margin: 0 2rem 0 2rem;
-        `}
-      >
-        <Icon Component={Linkedin} href={links.linkedin} height="4.5rem" />
-      </li>
-      <li>
-        <Icon Component={Insta} href={links.instagram} height="4.5rem" />
-      </li>
-    </ul>
-    {children}
-  </div>
-);
+const Hero = ({ children }) => {
+  const { image } = useBackgroundImage();
+
+  return (
+    <BackgroundImage css={heroStyles} tag="section" fluid={image.sharp.fluid}>
+      <div className="copy">
+        <h1>Alex Bavinton</h1>
+        <h3>Software Engineer</h3>
+      </div>
+      {/* Placeholder mobile links for MVP */}
+      <ul css={mobileLinksStyle}>
+        <li>
+          <Icon Component={Github} href={links.github} height="4.5rem" />
+        </li>
+        <li
+          css={css`
+            margin: 0 2rem 0 2rem;
+          `}
+        >
+          <Icon Component={Linkedin} href={links.linkedin} height="4.5rem" />
+        </li>
+        <li>
+          <Icon Component={Insta} href={links.instagram} height="4.5rem" />
+        </li>
+      </ul>
+      {children}
+    </BackgroundImage>
+  );
+};
 
 export default Hero;
