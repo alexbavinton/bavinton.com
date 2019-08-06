@@ -34,7 +34,7 @@ const listStyle = css`
   list-style-type: none;
   flex-wrap: nowrap;
   justify-content: space-evenly;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     display: none;
   }
 `;
