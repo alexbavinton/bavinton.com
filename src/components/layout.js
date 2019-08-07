@@ -6,7 +6,7 @@ import Header from './header';
 import useSiteMetadata from '../hooks/useSiteMetadata';
 
 const Layout = ({ children }) => {
-  const { title, description } = useSiteMetadata();
+  const { title, description, keywords } = useSiteMetadata();
   return (
     <>
       <Helmet>
@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
         <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
-        <meta name="keywords" cont="" />
+        <meta name="keywords" content={keywords} />
       </Helmet>
       <Global
         styles={css`

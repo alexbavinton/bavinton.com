@@ -2,6 +2,8 @@ module.exports = {
   siteMetadata: {
     title: 'Alex Bavinton - Software Engineer',
     description: 'Personal website of Alex Bavinton - software engineer at YLD',
+    keywords:
+      'Alex Bavinton Software Engineer Manchester Developer YLD Trainline FYE generative art blog talks webgl design UCL react node programming',
   },
   plugins: [
     'gatsby-plugin-emotion',
