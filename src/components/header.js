@@ -14,6 +14,8 @@ const headerStyle = css`
   line-height: 1;
   padding-right: 2rem;
   margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+  margin-left: 4rem;
   /* padding-left: 80vw; */
   display: flex;
   justify-content: space-between;

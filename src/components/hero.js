@@ -20,7 +20,7 @@ const heroStyles = css`
     font-size: 175%;
     position: absolute;
     bottom: 4rem;
-    left: 4rem;
+    left: 4.25rem;
     background-color: ${backgroundLight}80;
     border-radius: 10px;
     text-shadow: 2px 2px 1px ${backgroundDark};
