@@ -7,6 +7,7 @@ import {
   backgroundLight,
   backgroundDark,
 } from './colors';
+import Hamburger from './Hamburger';
 
 const NavLinkStyles = css`
   display: inline-block;
@@ -67,6 +68,7 @@ const Navbar = ({ path }) => (
       <NavLink to="/blog" text="Blog" path={path} />
       <NavLink to="/talks" text="Talks" path={path} />
     </ul>
+    <Hamburger />
   </nav>
 );
 
