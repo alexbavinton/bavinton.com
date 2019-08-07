@@ -5,7 +5,7 @@ import { lightGrey, backgroundDark, lightAccent, darkAccent } from './colors';
 import Header from './header';
 import useSiteMetadata from '../hooks/useSiteMetadata';
 
-const Layout = ({ children }) => {
+const Layout = ({ children, path }) => {
   const { title, description, keywords } = useSiteMetadata();
   return (
     <>
@@ -58,7 +58,7 @@ const Layout = ({ children }) => {
           }
         `}
       />
-      <Header />
+      <Header path={path} />
       <main>{children}</main>
     </>
   );
