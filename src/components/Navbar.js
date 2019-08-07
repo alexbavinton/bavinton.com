@@ -53,9 +53,12 @@ const Navbar = ({ path }) => (
   <nav>
     <ul
       css={css`
-        display: inline-block;
+        display: none;
         padding: 0;
         margin: 0;
+        @media only screen and (min-width: 768px) {
+          display: inline-block;
+        }
       `}
     >
       <NavLink to="/" text="Home" path={path} />

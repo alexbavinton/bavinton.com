@@ -16,7 +16,6 @@ const headerStyle = css`
   margin-top: 0.5rem;
   margin-bottom: 0.25rem;
   margin-left: 4rem;
-  /* padding-left: 80vw; */
   display: flex;
   justify-content: space-between;
 
@@ -25,11 +24,9 @@ const headerStyle = css`
   }
   @media only screen and (min-width: 992px) {
     height: 1.75rem;
-    /* padding-left: 85vw; */
   }
   @media only screen and (min-width: 1200px) {
     height: 2rem;
-    /* padding-left: 85vw; */
   }
 `;
 
