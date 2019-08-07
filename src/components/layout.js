@@ -13,7 +13,8 @@ const Layout = ({ children }) => {
         <meta charSet="utf-8" />
         <html lang="en" />
         <title>{title}</title>
-        <description>{description}</description>
+        <meta name="description" content={description} />
+        <meta name="keywords" cont="" />
       </Helmet>
       <Global
         styles={css`
