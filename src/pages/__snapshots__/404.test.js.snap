@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`404 page snapshot 1`] = `
+Array [
+  <header
+    css={
+      Object {
+        "map": undefined,
+        "name": "8jyx37",
+        "next": undefined,
+        "styles": "
+  height: 1rem;
+  color: #C5C6C7;
+  line-height: 1;
+  padding-right: 2rem;
+  margin-top: 0.5rem;
+  padding-left: 80vw;
+
+  @media only screen and (min-width: 768px) {
+    height: 1.5rem;
+  }
+  @media only screen and (min-width: 992px) {
+    height: 1.75rem;
+    padding-left: 85vw;
+  }
+  @media only screen and (min-width: 1200px) {
+    height: 2rem;
+    padding-left: 85vw;
+  }
+",
+      }
+    }
+  >
+    <ul
+      css={
+        Object {
+          "map": undefined,
+          "name": "1ad2a0w",
+          "next": undefined,
+          "styles": "
+  display: flex;
+  height: inherit;
+  list-style-type: none;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+",
+        }
+      }
+    >
+      <li
+        css={
+          Object {
+            "map": undefined,
+            "name": "1ypjkz1",
+            "next": undefined,
+            "styles": "
+  flex: auto;
+",
+          }
+        }
+      >
+        <a
+          href="https://github.com/alexbavinton"
+        >
+          <div
+            className="mock"
+          />
+        </a>
+      </li>
+      <li
+        css={
+          Object {
+            "map": undefined,
+            "name": "1ypjkz1",
+            "next": undefined,
+            "styles": "
+  flex: auto;
+",
+          }
+        }
+      >
+        <a
+          href="https://www.linkedin.com/in/alex-bavinton"
+        >
+          <div
+            className="mock"
+          />
+        </a>
+      </li>
+      <li
+        css={
+          Object {
+            "map": undefined,
+            "name": "1ypjkz1",
+            "next": undefined,
+            "styles": "
+  flex: auto;
+",
+          }
+        }
+      >
+        <a
+          href="https://www.instagram.com/alexbavinton/"
+        >
+          <div
+            className="mock"
+          />
+        </a>
+      </li>
+    </ul>
+  </header>,
+  <main>
+    <div
+      css={
+        Object {
+          "map": undefined,
+          "name": "pdzuxe",
+          "next": undefined,
+          "styles": "
+  font-size: 300%;
+  background-color: #1F2833;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 0.5rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  @media only screen and (max-width: 768px) {
+    font-size: 125%;
+  }
+",
+        }
+      }
+    >
+      <h1>
+        404
+      </h1>
+      <h3>
+        Page not found
+      </h3>
+    </div>
+  </main>,
+]
+`;
