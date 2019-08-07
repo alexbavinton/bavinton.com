@@ -1,11 +1,13 @@
 jest.mock('../hooks/useSiteMetadata');
 jest.mock('../hooks/useBackroundImage');
+jest.mock('gatsby-background-image');
 
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Index from './index';
 import useSiteMetadata from '../hooks/useSiteMetadata';
 import useBackgroundImage from '../hooks/useBackroundImage';
+import BackgroundImage from 'gatsby-background-image';
 
 const fluidMock = {
   aspectRatio: 1,
@@ -20,6 +22,7 @@ describe('index', () => {
     useBackgroundImage.mockReturnValue({
       image: { sharp: { fluid: fluidMock } },
     });
+    BackgroundImage.mockReturnValue(<div className="background"></div>);
 
     const tree = renderer.create(<Index />).toJSON();
     expect(tree).toMatchSnapshot();
