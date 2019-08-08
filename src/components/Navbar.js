@@ -1,54 +1,7 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import { css } from '@emotion/core';
-import {
-  darkAccent,
-  lightGrey,
-  backgroundLight,
-  backgroundDark,
-} from './colors';
 import Hamburger from './Hamburger';
-
-const NavLinkStyles = css`
-  display: inline-block;
-  margin: 0.25rem;
-  border-radius: 10px;
-  padding: 0.25rem;
-  font-size: 0.8rem;
-  @media only screen and (min-width: 992px) {
-    font-size: 1rem;
-  }
-  :hover {
-    background-color: ${backgroundLight};
-    h3 {
-      color: ${darkAccent};
-      text-shadow: 2px 2px 1px ${backgroundDark};
-    }
-  }
-`;
-
-const NavLink = ({ to, text, path }) => {
-  const isActive = path === to;
-  return (
-    <li
-      css={css`
-        ${NavLinkStyles}
-        h3 {
-          color: ${isActive ? darkAccent : lightGrey};
-        }
-      `}
-    >
-      <Link
-        to={to}
-        css={css`
-          text-decoration: none;
-        `}
-      >
-        <h3>{text}</h3>
-      </Link>
-    </li>
-  );
-};
+import NavLink from './NavLink';
 
 const Navbar = ({ path }) => (
   <nav>

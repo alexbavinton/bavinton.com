@@ -14,13 +14,13 @@ const headerStyle = css`
   line-height: 1;
   padding-right: 2rem;
   margin-top: 0.5rem;
-  margin-bottom: 0.25rem;
-  margin-left: 4rem;
+  margin-bottom: 0.5rem;
   display: flex;
   justify-content: space-between;
 
   @media only screen and (min-width: 768px) {
     height: 1.5rem;
+    margin-left: 4rem;
   }
   @media only screen and (min-width: 992px) {
     height: 1.75rem;
