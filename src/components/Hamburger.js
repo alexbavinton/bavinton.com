@@ -33,7 +33,7 @@ const hamburgerButtonStyle = css`
 `;
 
 const navStyle = css`
-  display: none;
+  display: block;
   background-color: ${backgroundLight};
   width: 100vw;
   height: 100vh;
@@ -42,6 +42,9 @@ const navStyle = css`
   left: 0px;
   top: 0px;
   padding: 1rem;
+  transform: translateX(-100%);
+  transition: transform 300ms ease-in-out;
+
   ul {
     margin-top: 3rem;
   }
@@ -52,6 +55,7 @@ const navStyle = css`
 
 const navStyleVisible = css`
   display: block;
+  transform: translateX(0);
 `;
 
 const closeButtonStyle = css`
