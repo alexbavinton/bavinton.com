@@ -29,6 +29,9 @@ const NavLinkStylesDesktop = css`
 const NavlinkStyleMobile = css`
   ${NavLinkStylesDesktop}
   display: block;
+  font-size: 200%;
+  width: fit-content;
+  margin-bottom: 1.5rem;
 `;
 
 const NavLink = ({ to, text, path, mobile = false }) => {

@@ -2,6 +2,7 @@ import React from 'react';
 import { css } from '@emotion/core';
 import Hamburger from './Hamburger';
 import NavLink from './NavLink';
+import links from './links';
 
 const Navbar = ({ path }) => (
   <nav>
@@ -15,11 +16,11 @@ const Navbar = ({ path }) => (
         }
       `}
     >
-      <NavLink to="/" text="Home" path={path} />
-      <NavLink to="/images" text="Images" path={path} />
-      <NavLink to="/about" text="About" path={path} />
-      <NavLink to="/blog" text="Blog" path={path} />
-      <NavLink to="/talks" text="Talks" path={path} />
+      <NavLink to={links.home} text="Home" path={path} />
+      <NavLink to={links.images} text="Images" path={path} />
+      <NavLink to={links.about} text="About" path={path} />
+      <NavLink to={links.blog} text="Blog" path={path} />
+      <NavLink to={links.talks} text="Talks" path={path} />
     </ul>
     <Hamburger />
   </nav>
