@@ -87,16 +87,27 @@ const HamburgerNav = ({ path }) => {
           ${toggle && navStyleVisible}
         `}
       >
-        <button css={closeButtonStyle} onClick={() => setToggle(false)}>
-          <Close />
-        </button>
-        <ul>
-          <NavLink mobile={true} to={links.home} text="Home" path={path} />
-          <NavLink mobile={true} to={links.images} text="Images" path={path} />
-          <NavLink mobile={true} to={links.about} text="About" path={path} />
-          <NavLink mobile={true} to={links.blog} text="Blog" path={path} />
-          <NavLink mobile={true} to={links.talks} text="Talks" path={path} />
-        </ul>
+        <div
+          css={css`
+            display: ${toggle ? 'block' : 'none'};
+          `}
+        >
+          <button css={closeButtonStyle} onClick={() => setToggle(false)}>
+            <Close />
+          </button>
+          <ul>
+            <NavLink mobile={true} to={links.home} text="Home" path={path} />
+            <NavLink
+              mobile={true}
+              to={links.images}
+              text="Images"
+              path={path}
+            />
+            <NavLink mobile={true} to={links.about} text="About" path={path} />
+            <NavLink mobile={true} to={links.blog} text="Blog" path={path} />
+            <NavLink mobile={true} to={links.talks} text="Talks" path={path} />
+          </ul>
+        </div>
       </nav>
     </>
   );
