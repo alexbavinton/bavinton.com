@@ -6,7 +6,7 @@ Array [
     css={
       Object {
         "map": undefined,
-        "name": "8jyx37",
+        "name": "jj7ml0",
         "next": undefined,
         "styles": "
   height: 1rem;
@@ -14,28 +14,292 @@ Array [
   line-height: 1;
   padding-right: 2rem;
   margin-top: 0.5rem;
-  padding-left: 80vw;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
 
   @media only screen and (min-width: 768px) {
     height: 1.5rem;
+    margin-left: 4rem;
   }
   @media only screen and (min-width: 992px) {
     height: 1.75rem;
-    padding-left: 85vw;
   }
   @media only screen and (min-width: 1200px) {
     height: 2rem;
-    padding-left: 85vw;
   }
 ",
       }
     }
   >
+    <nav>
+      <ul
+        css={
+          Object {
+            "map": undefined,
+            "name": "1p1vkvp",
+            "next": undefined,
+            "styles": "
+        display: none;
+        padding: 0;
+        margin: 0;
+        @media only screen and (min-width: 768px) {
+          display: inline-block;
+        }
+      ",
+          }
+        }
+      >
+        <ul
+          css={
+            Object {
+              "map": undefined,
+              "name": "9v9ph",
+              "next": undefined,
+              "styles": "
+      
+  display: none;
+  padding: 0;
+  margin: 0;
+  @media only screen and (min-width: 768px) {
+    display: inline-block;
+  }
+
+    ",
+            }
+          }
+        >
+          <li
+            css={
+              Object {
+                "map": undefined,
+                "name": "18ldndt",
+                "next": undefined,
+                "styles": "
+        
+  display: inline-block;
+  margin: 0.25rem;
+  border-radius: 10px;
+  padding: 0.25rem;
+  font-size: 0.8rem;
+  @media only screen and (min-width: 992px) {
+    font-size: 1rem;
+  }
+  :hover {
+    background-color: #1F2833;
+    h3 {
+      color: #45A29E;
+      text-shadow: 2px 2px 1px #0B0B0B;
+    }
+  }
+
+        h3 {
+          color: #C5C6C7;
+        }
+      ",
+              }
+            }
+          >
+            <a
+              css={
+                Object {
+                  "map": undefined,
+                  "name": "id1ekf",
+                  "next": undefined,
+                  "styles": "
+          text-decoration: none;
+        ",
+                }
+              }
+              href="/"
+            >
+              <h3>
+                Home
+              </h3>
+            </a>
+          </li>
+        </ul>
+      </ul>
+      <button
+        css={
+          Object {
+            "map": undefined,
+            "name": "1rtfbht",
+            "next": undefined,
+            "styles": "
+  display: inline-block;
+  cursor: pointer;
+  height: 1rem;
+  background-color: transparent;
+  border: 0;
+  svg {
+    color: #0B0B0B;
+    width: 1rem;
+    fill: #C5C6C7;
+    :hover {
+      fill: #45A29E;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+",
+          }
+        }
+        onClick={[Function]}
+      >
+        <div
+          className="mock"
+        />
+      </button>
+      <nav
+        css={
+          Object {
+            "map": undefined,
+            "name": "t5jx0",
+            "next": undefined,
+            "styles": "
+          
+  display: block;
+  background-color: #1F2833;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  position: fixed;
+  overflow-y: auto;
+  left: 0px;
+  top: 0px;
+  padding: 1rem;
+  transform: translateX(-100%);
+  transition: transform 300ms ease-in-out;
+
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+
+          
+        ",
+          }
+        }
+      >
+        <div
+          css={
+            Object {
+              "map": undefined,
+              "name": "1olf5n8",
+              "next": undefined,
+              "styles": "
+            display: none;
+          ",
+            }
+          }
+        >
+          <button
+            css={
+              Object {
+                "map": undefined,
+                "name": "696vmm",
+                "next": undefined,
+                "styles": "
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  svg {
+    height: 2rem;
+    fill: #66FCF1;
+    :hover {
+      fill: #45A29E;
+    }
+  }
+",
+              }
+            }
+            onClick={[Function]}
+          >
+            <div
+              className="mock"
+            />
+          </button>
+          <ul
+            css={
+              Object {
+                "map": undefined,
+                "name": "34f6ko",
+                "next": undefined,
+                "styles": "
+      margin-top: 3rem;
+    ",
+              }
+            }
+          >
+            <li
+              css={
+                Object {
+                  "map": undefined,
+                  "name": "b7761g",
+                  "next": undefined,
+                  "styles": "
+        
+  
+  display: inline-block;
+  margin: 0.25rem;
+  border-radius: 10px;
+  padding: 0.25rem;
+  font-size: 0.8rem;
+  @media only screen and (min-width: 992px) {
+    font-size: 1rem;
+  }
+  :hover {
+    background-color: #1F2833;
+    h3 {
+      color: #45A29E;
+      text-shadow: 2px 2px 1px #0B0B0B;
+    }
+  }
+
+  display: block;
+  font-size: 200%;
+  width: fit-content;
+  margin-bottom: 1.5rem;
+
+        h3 {
+          color: #C5C6C7;
+        }
+      ",
+                }
+              }
+            >
+              <a
+                css={
+                  Object {
+                    "map": undefined,
+                    "name": "id1ekf",
+                    "next": undefined,
+                    "styles": "
+          text-decoration: none;
+        ",
+                  }
+                }
+                href="/"
+              >
+                <h3>
+                  Home
+                </h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </nav>
     <ul
       css={
         Object {
           "map": undefined,
-          "name": "1ad2a0w",
+          "name": "bbpavw",
           "next": undefined,
           "styles": "
   display: flex;
@@ -43,6 +307,7 @@ Array [
   list-style-type: none;
   flex-wrap: nowrap;
   justify-content: space-evenly;
+  min-width: 8.5rem;
   @media only screen and (max-width: 768px) {
     display: none;
   }
