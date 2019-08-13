@@ -8,8 +8,7 @@ import {
   lightAccent,
 } from './colors';
 import HamburgerIcon from '../assets/menu.svg';
-import NavLink from './NavLink';
-import links from './links';
+import NavLinks from './NavLinks';
 import Close from '../assets/close.svg';
 
 const hamburgerButtonStyle = css`
@@ -39,15 +38,13 @@ const navStyle = css`
   height: 100vh;
   z-index: 1000;
   position: fixed;
+  overflow-y: auto;
   left: 0px;
   top: 0px;
   padding: 1rem;
   transform: translateX(-100%);
   transition: transform 300ms ease-in-out;
 
-  ul {
-    margin-top: 3rem;
-  }
   @media only screen and (min-width: 768px) {
     display: none;
   }
@@ -95,18 +92,7 @@ const HamburgerNav = ({ path }) => {
           <button css={closeButtonStyle} onClick={() => setToggle(false)}>
             <Close />
           </button>
-          <ul>
-            <NavLink mobile={true} to={links.home} text="Home" path={path} />
-            <NavLink
-              mobile={true}
-              to={links.images}
-              text="Images"
-              path={path}
-            />
-            <NavLink mobile={true} to={links.about} text="About" path={path} />
-            <NavLink mobile={true} to={links.blog} text="Blog" path={path} />
-            <NavLink mobile={true} to={links.talks} text="Talks" path={path} />
-          </ul>
+          <NavLinks mobile={true} path={path} />
         </div>
       </nav>
     </>

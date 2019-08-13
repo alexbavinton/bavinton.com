@@ -7,6 +7,7 @@ import {
   backgroundLight,
   backgroundDark,
 } from './colors';
+import links from './links';
 
 const NavLinkStylesDesktop = css`
   display: inline-block;
@@ -57,4 +58,27 @@ const NavLink = ({ to, text, path, mobile = false }) => {
   );
 };
 
-export default NavLink;
+const NavlinksStyle = css`
+  display: none;
+  padding: 0;
+  margin: 0;
+  @media only screen and (min-width: 768px) {
+    display: inline-block;
+  }
+`;
+
+const NavLinks = ({ path, mobile }) => (
+  <ul
+    css={css`
+      ${!mobile ? NavlinksStyle : 'margin-top: 3rem;'}
+    `}
+  >
+    <NavLink mobile={mobile} to={links.home} text="Home" path={path} />
+    <NavLink mobile={mobile} to={links.images} text="Images" path={path} />
+    <NavLink mobile={mobile} to={links.about} text="About" path={path} />
+    <NavLink mobile={mobile} to={links.blog} text="Blog" path={path} />
+    <NavLink mobile={mobile} to={links.talks} text="Talks" path={path} />
+  </ul>
+);
+
+export default NavLinks;
