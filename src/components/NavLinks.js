@@ -74,10 +74,10 @@ const NavLinks = ({ path, mobile }) => (
     `}
   >
     <NavLink mobile={mobile} to={links.home} text="Home" path={path} />
-    <NavLink mobile={mobile} to={links.images} text="Images" path={path} />
+    {/* <NavLink mobile={mobile} to={links.images} text="Images" path={path} />
     <NavLink mobile={mobile} to={links.about} text="About" path={path} />
     <NavLink mobile={mobile} to={links.blog} text="Blog" path={path} />
-    <NavLink mobile={mobile} to={links.talks} text="Talks" path={path} />
+    <NavLink mobile={mobile} to={links.talks} text="Talks" path={path} /> */}
   </ul>
 );
 
